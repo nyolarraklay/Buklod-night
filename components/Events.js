@@ -15,11 +15,13 @@ const ScheduleList = () => {
 
   return (
     <div className="p-4 h-screen">
-      <h2 className="text-2xl font-bold">Schedule</h2>
-      <p className="text-gray-500">
-        Here's the schedule of activities for the event.
-      </p>
-      <h2 className="text-md font-bold mt-5">Friday, December 27, 2024</h2>
+      <div className="flex flex-col items-center">
+        <h2 className="text-2xl font-bold">Schedule</h2>
+        <p className="text-gray-500">
+          Here's the schedule of activities for the event.
+        </p>
+      </div>
+      <h2 className="text-md font-bold mt-10">Friday, December 27, 2024</h2>
       <ul className={styles.scheduleList}>
         {scheduleItems.map((item, index) => (
           <li key={index} className={styles.scheduleItem}>
