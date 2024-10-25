@@ -1,0 +1,46 @@
+/* components/ScheduleList.module.css */
+
+.scheduleContainer {
+  padding: 20px;
+}
+
+.scheduleList {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  position: relative; /* Position for the overall list */
+}
+
+.scheduleItem {
+  position: relative; /* Position for the line and dot */
+  padding-left: 30px; /* Space for the dot */
+  margin: 20px 0; /* Spacing between items */
+}
+
+.dot {
+  position: absolute;
+  left: 10px; /* Position the dot */
+  top: 0; /* Align with the top of the item */
+  width: 10px; /* Dot size */
+  height: 10px; /* Dot size */
+  border-radius: 50%; /* Makes it circular */
+  background-color: black; /* Dot color */
+}
+
+.line {
+  position: absolute;
+  left: 15px; /* Align the line next to the dot */
+  top: 10px; /* Start below the dot */
+  width: 2px; /* Line thickness */
+  height: calc(100% + 10px); /* Connects all the way to the next item */
+  background-color: black; /* Line color */
+  z-index: -1; /* Send the line behind the dot and text */
+}
+
+.time {
+  font-weight: bold;
+  margin-right: 10px; /* Space between time and task */
+}
+
+.task {
+  /* Additional styles for tasks can be added here */
+}
