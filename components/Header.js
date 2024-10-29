@@ -1,18 +1,14 @@
-"use client";
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useState } from "react";
 
-export default function Header() {
+export default function Header({ scrollToSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  console.log(isOpen);
-
   return (
-    <div className="flex justify-between items-center p-3 bg-green-400 text-red-500 sticky top-0 z-50">
+    <div className="flex justify-between items-center p-3 bg-green-400 text-red-500 fixed top-0 left-0 right-0 z-50 w-full shadow-md">
       <h1
         className={
           isOpen ? "hidden" : "transition-all duration-300 font-bold text-xl"
@@ -43,43 +39,27 @@ export default function Header() {
       </button>
 
       {isOpen && (
-        <ul className="flex justify-center space-x-8 w-full">
-          <li onClick={toggleMenu}>
-            <Link href="/">Home</Link>
-          </li>
-          <li onClick={toggleMenu}>
-            <Link href="/delegates">Delegates</Link>
-          </li>
-          <li onClick={toggleMenu}>
-            <Link href="/events">Events</Link>
-          </li>
-          <li onClick={toggleMenu}>
-            <Link href="/about">About</Link>
-          </li>
-          <li onClick={toggleMenu}>
-            <Link href="/gallery">Gallery</Link>
-          </li>
-        </ul>
+        <nav className="flex justify-center space-x-8 w-full">
+          <button onClick={() => scrollToSection("home")}>Home</button>
+          <button onClick={() => scrollToSection("delegates")}>
+            Delegates
+          </button>
+          <button onClick={() => scrollToSection("events")}>Events</button>
+          <button onClick={() => scrollToSection("gallery")}>Gallery</button>
+          <button onClick={() => scrollToSection("about")}>About</button>
+        </nav>
       )}
 
       <div className="hidden sm:flex transition-all duration-300 opacity-0 sm:opacity-100">
-        <ul className="flex justify-between w-80 space-x-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/delegates">Delegates</Link>
-          </li>
-          <li>
-            <Link href="/events">Events</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/gallery">Gallery</Link>
-          </li>
-        </ul>
+        <nav className="flex justify-center space-x-8 w-full">
+          <button onClick={() => scrollToSection("home")}>Home</button>
+          <button onClick={() => scrollToSection("delegates")}>
+            Delegates
+          </button>
+          <button onClick={() => scrollToSection("events")}>Events</button>
+          <button onClick={() => scrollToSection("gallery")}>Gallery</button>
+          <button onClick={() => scrollToSection("about")}>About</button>
+        </nav>
       </div>
     </div>
   );

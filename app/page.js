@@ -1,17 +1,52 @@
-import React from "react";
+"use client";
+import { useRef } from "react";
+import Headers from "../components/Header";
+import FrontPage from "@/components/FrontPage";
+import Delegates from "@/components/Delegates";
+import Events from "@/components/Events";
+import Gallery from "@/components/Gallery";
+import About from "@/components/About";
 
-export default function FrontPage() {
+export default function HomePage() {
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+  const section4Ref = useRef(null);
+  const section5Ref = useRef(null);
+
+  const scrollToSection = (section) => {
+    const refs = {
+      home: section1Ref,
+      delegates: section2Ref,
+      events: section3Ref,
+      gallery: section4Ref,
+      about: section5Ref,
+    };
+    const sectionTop = refs[section]?.current?.offsetTop || 0;
+    window.scrollTo({ top: sectionTop - 60, behavior: "smooth" });
+  };
+
   return (
-    <div className="h-screen p-6 space-y-6">
-      <span className="text-red-500">
-        It's that time of the year again. Local of Oslo East Welcomes you to our
-        annual....
-      </span>
-      <h1 className="text-6xl flex flex-col items-start">
-        Buklod Night <span className="mt-1"> 2024</span>
-      </h1>
-      <p>Join us for a night of fun, food, and fellowship!</p>
-      <p>Stay tuned for more details.</p>
+    <div>
+      <Headers scrollToSection={scrollToSection} />
+
+      <div className="flex flex-col justify-between">
+        <div ref={section1Ref} className="pt-10">
+          <FrontPage />
+        </div>
+        <div ref={section2Ref} className="pt-10">
+          <Delegates />
+        </div>
+        <div ref={section3Ref} className="pt-6">
+          <Events />
+          <div ref={section4Ref} className="pt-10">
+            <Gallery />
+          </div>
+          <div ref={section5Ref} className="pt-10">
+            <About />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
