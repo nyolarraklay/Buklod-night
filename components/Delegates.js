@@ -1,39 +1,68 @@
 export default function Delegates() {
   const delegates = [
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Balbin",
+      image: "/delegates/Balbin.jpg",
+    },
+    {
+      name: "Mrs Mary Jane Baltazar",
+      image: "/delegates/Baltazar.jpg",
+    },
+    {
+      name: "Mr & Mrs Balzita",
+      image: "/delegates/Balzita.jpg",
+    },
+    {
+      name: "Mr RC Catalasan",
+      image: "/delegates/Catalasan.jpg",
+    },
+    {
+      name: "Mr & Mrs Kluften",
+      image: "/delegates/Kluften.jpg",
+    },
+    {
+      name: "Mr & Mrs Løkke",
+      image: "/delegates/Løkke.jpg",
+    },
+    {
+      name: "Mr & Mrs Manuntag",
+      image: "/delegates/Manuntag.jpg",
+    },
+    {
+      name: "Mr & Mrs Mendoza",
+      image: "/delegates/Mendoza.jpg",
+    },
+    {
+      name: "Mrs Divine Naguit",
+      image: "/delegates/Naguit.jpg",
     },
     {
       name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      image: "/delegates/Osorio.jpg",
     },
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Paleracio",
+      image: "/delegates/PaleracioE.jpg",
     },
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Santos",
+      image: "/delegates/Santos.jpg",
     },
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Simon",
+      image: "/delegates/Simon.jpg",
     },
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Tiburcio",
+      image: "/delegates/Tiburcio.jpg",
     },
     {
-      name: "Mr & Mrs Osorio",
-      image:
-        "https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415077296_10160695135022798_4564813638957109144_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1ObjodihC6cQ7kNvgFYjC4r&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AV6ynu3uZgzGloTaGKO2ACa&oh=00_AYBPS31hB36dhwiuRFCN0eL9BweEpOe2HLsqGAsgkm-NrA&oe=6721A995",
+      name: "Mr & Mrs Toledo",
+      image: "/delegates/Toledo.jpg",
+    },
+    {
+      name: "Mr & Mrs Thoreplass",
+      image: "/delegates/Thoreplass.jpg",
     },
     // Add more delegate objects here
   ];
@@ -42,7 +71,7 @@ export default function Delegates() {
     <div className="h-full flex flex-col p-6 items-center justify-center bg-gray-800">
       <h1 className="text-6xl font-bold mb-4 text-white">Delegates</h1>
       <p className="text-lg mb-8 text-white">
-        Meet the delegates of Buklod Night 2024!
+        Meet the delegates of Buklod Night 2023!
       </p>
 
       <div className="flex flex-wrap justify-center p-6">
