@@ -8,18 +8,19 @@ export default function Header({ scrollToSection }) {
   };
 
   return (
-    <div className="flex justify-between items-center p-3 bg-green-400 text-red-500 fixed top-0 left-0 right-0 z-50 w-full shadow-md">
+    <div className="flex justify-between items-center p-4 bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 w-full shadow-md">
       <h1
-        className={
-          isOpen ? "hidden" : "transition-all duration-300 font-bold text-xl"
-        }
+        className={`transition-all duration-300 font-bold text-xl cursor-pointer ${
+          isOpen ? "hidden" : "block"
+        }`}
+        onClick={() => scrollToSection("home")}
       >
         Buklod Night 2024
       </h1>
       <button
-        className={
-          isOpen ? "hidden" : "flex sm:hidden transition-all duration-300"
-        }
+        className={`flex sm:hidden transition-all duration-300 ${
+          isOpen ? "hidden" : "block"
+        }`}
         onClick={toggleMenu}
       >
         <svg
@@ -28,7 +29,7 @@ export default function Header({ scrollToSection }) {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6"
+          className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
@@ -39,26 +40,85 @@ export default function Header({ scrollToSection }) {
       </button>
 
       {isOpen && (
-        <nav className="flex justify-center space-x-8 w-full">
-          <button onClick={() => scrollToSection("home")}>Home</button>
-          <button onClick={() => scrollToSection("delegates")}>
+        <nav className="flex justify-center space-x-6 w-full sm:hidden">
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("home")}
+          >
+            Home
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("delegates")}
+          >
             Delegates
           </button>
-          <button onClick={() => scrollToSection("events")}>Events</button>
-          <button onClick={() => scrollToSection("gallery")}>Gallery</button>
-          <button onClick={() => scrollToSection("about")}>About</button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("events")}
+          >
+            Events
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("gallery")}
+          >
+            Gallery
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("about")}
+          >
+            About
+          </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            className="size-4"
+            onClick={toggleMenu}
+          >
+            <path
+              fillRule="evenodd"
+              d="M12.5 9.75A2.75 2.75 0 0 0 9.75 7H4.56l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 1.06L4.56 5.5h5.19a4.25 4.25 0 0 1 0 8.5h-1a.75.75 0 0 1 0-1.5h1a2.75 2.75 0 0 0 2.75-2.75Z"
+              clipRule="evenodd"
+            />
+          </svg>
         </nav>
       )}
 
       <div className="hidden sm:flex transition-all duration-300 opacity-0 sm:opacity-100">
         <nav className="flex justify-center space-x-8 w-full">
-          <button onClick={() => scrollToSection("home")}>Home</button>
-          <button onClick={() => scrollToSection("delegates")}>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("home")}
+          >
+            Home
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("delegates")}
+          >
             Delegates
           </button>
-          <button onClick={() => scrollToSection("events")}>Events</button>
-          <button onClick={() => scrollToSection("gallery")}>Gallery</button>
-          <button onClick={() => scrollToSection("about")}>About</button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("events")}
+          >
+            Events
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("gallery")}
+          >
+            Gallery
+          </button>
+          <button
+            className="hover:text-indigo-400 transition-colors"
+            onClick={() => scrollToSection("about")}
+          >
+            About
+          </button>
         </nav>
       </div>
     </div>

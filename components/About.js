@@ -11,7 +11,7 @@ const Section = ({ title, children }) => (
 
 export default function About() {
   return (
-    <div className="h-screen px-8 py-10 flex flex-col justify-evenly">
+    <div className="h-screen px-8 py-10 bg-gray-100 flex flex-col justify-evenly">
       <Section title="Attire">
         Formal attire is required for the event. The theme for this year is "Old
         Hollywood".
