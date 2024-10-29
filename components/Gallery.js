@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <div className="h-screen lg:h-full">
+    <div className="h-full">
       <div className="flex flex-col items-center">
         <h1 className="text-6xl ">Gallery</h1>
         <p>Images from Buklod Night 2023</p>
