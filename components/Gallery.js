@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <div className="h-screen lg:h-full">
-      <div className="flex flex-col items-center">
+    <div className="h-full bg-gray-800 p-6">
+      <div className="flex flex-col items-center text-white ">
         <h1 className="text-6xl ">Gallery</h1>
         <p>Images from Buklod Night 2023</p>
       </div>

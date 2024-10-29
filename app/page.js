@@ -34,15 +34,15 @@ export default function HomePage() {
         <div ref={section1Ref} className="pt-10">
           <FrontPage />
         </div>
-        <div ref={section2Ref} className="pt-10">
+        <div ref={section2Ref}>
           <Delegates />
         </div>
-        <div ref={section3Ref} className="pt-6">
+        <div ref={section3Ref}>
           <Events />
-          <div ref={section4Ref} className="pt-10">
+          <div ref={section4Ref}>
             <Gallery />
           </div>
-          <div ref={section5Ref} className="pt-10">
+          <div ref={section5Ref}>
             <About />
           </div>
         </div>
