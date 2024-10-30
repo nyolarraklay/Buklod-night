@@ -45,6 +45,10 @@ export default function Delegates() {
       image: "/delegates/PaleracioE.jpg",
     },
     {
+      name: "Mr & Mrs Pineda",
+      image: "/delegates/Pineda.jpg",
+    },
+    {
       name: "Mr & Mrs Santos",
       image: "/delegates/Santos.jpg",
     },
@@ -64,6 +68,10 @@ export default function Delegates() {
       name: "Mr & Mrs Thoreplass",
       image: "/delegates/Thoreplass.jpg",
     },
+    {
+      name: "Mr & Mrs Vennegas",
+      image: "/delegates/Vennegas.jpg",
+    },
     // Add more delegate objects here
   ];
 
@@ -74,13 +82,13 @@ export default function Delegates() {
         Meet the delegates of Buklod Night 2023!
       </p>
 
-      <div className="flex flex-wrap justify-center p-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-center p-6">
         {delegates.map((delegate, index) => (
           <div key={index} className="flex flex-col items-center m-4">
             <img
               src={delegate.image}
               alt={`Delegate: ${delegate.name}`}
-              className="rounded-lg cursor-pointer h-32 w-32 object-cover mb-2"
+              className="rounded-lg cursor-pointer w-48 object-contain mb-2"
             />
             <p className="font-semibold text-center text-white">
               {delegate.name}
