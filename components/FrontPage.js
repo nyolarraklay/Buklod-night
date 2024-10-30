@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FrontPage() {
   return (
-    <div className="h-full lg:h-screen p-8 flex flex-col lg:flex-row items-center lg:justify-center space-y-10 lg:space-y-0 lg:space-x-10 bg-gray-100">
+    <div className="h-full lg:h-screen mt-24 mb-10 flex flex-col lg:flex-row items-center lg:justify-center space-y-10 lg:space-y-0 lg:space-x-10 bg-gray-100">
       <div className="text-center lg:text-left max-w-lg">
         <span className="text-red-600 font-medium text-lg">
           It's that time of the year again. Local of Oslo East Welcomes you to

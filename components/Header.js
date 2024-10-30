@@ -8,7 +8,7 @@ export default function Header({ scrollToSection }) {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 w-full shadow-md">
+    <div className="h-20 flex justify-between items-center p-4 bg-gray-800 text-white fixed top-0 left-0 right-0 z-50 w-full shadow-md">
       <h1
         className={`transition-all duration-300 font-bold text-xl cursor-pointer ${
           isOpen ? "hidden" : "block"
