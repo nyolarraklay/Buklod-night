@@ -20,7 +20,7 @@ export default function FrontPage() {
         <img
           src="/20241029_181954.jpg"
           alt="Buklod Night 2024"
-          className="rounded-lg cursor-pointer h-[580px] w-full object-contain shadow-lg"
+          className="rounded-lg cursor-pointer h-[580px] w-full object-cover shadow-lg"
         />
       </div>
     </div>
