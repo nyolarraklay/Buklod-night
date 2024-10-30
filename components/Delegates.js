@@ -1,6 +1,10 @@
 export default function Delegates() {
   const delegates = [
     {
+      name: "Mr & Mrs Anor",
+      image: "/delegates/Anor.jpg",
+    },
+    {
       name: "Mr & Mrs Balbin",
       image: "/delegates/Balbin.jpg",
     },
@@ -17,12 +21,24 @@ export default function Delegates() {
       image: "/delegates/Catalasan.jpg",
     },
     {
+      name: "Mr & Mrs Estoy",
+      image: "/delegates/Estoy.jpg",
+    },
+    {
+      name: "Mr & Mrs Hauge",
+      image: "/delegates/Hauge.jpg",
+    },
+    {
       name: "Mr & Mrs Kluften",
       image: "/delegates/Kluften.jpg",
     },
     {
       name: "Mr & Mrs Løkke",
       image: "/delegates/Løkke.jpg",
+    },
+    {
+      name: "Mr & Mrs Lunde",
+      image: "/delegates/Lunde.jpg",
     },
     {
       name: "Mr & Mrs Manuntag",
@@ -45,8 +61,16 @@ export default function Delegates() {
       image: "/delegates/PaleracioE.jpg",
     },
     {
+      name: "Mr & Mrs Pancho",
+      image: "/delegates/Pancho.jpg",
+    },
+    {
       name: "Mr & Mrs Pineda",
       image: "/delegates/Pineda.jpg",
+    },
+    {
+      name: "Mr & Mrs Sabado",
+      image: "/delegates/Sabado.jpg",
     },
     {
       name: "Mr & Mrs Santos",
@@ -57,16 +81,16 @@ export default function Delegates() {
       image: "/delegates/Simon.jpg",
     },
     {
+      name: "Mr & Mrs Thoreplass",
+      image: "/delegates/Thoreplass.jpg",
+    },
+    {
       name: "Mr & Mrs Tiburcio",
       image: "/delegates/Tiburcio.jpg",
     },
     {
       name: "Mr & Mrs Toledo",
       image: "/delegates/Toledo.jpg",
-    },
-    {
-      name: "Mr & Mrs Thoreplass",
-      image: "/delegates/Thoreplass.jpg",
     },
     {
       name: "Mr & Mrs Vennegas",

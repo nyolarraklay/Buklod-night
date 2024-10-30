@@ -11,21 +11,19 @@ const Section = ({ title, children }) => (
 
 export default function About() {
   return (
-    <div className="h-screen px-8 py-10 bg-gray-100 flex flex-col justify-evenly">
+    <div className="h-screen mx-auto  max-w-lg px-8 py-10  flex flex-col justify-evenly">
       <Section title="Attire">
-        Formal attire is required for the event. The theme for this year is "Old
-        Hollywood".
+        "Formal attire is required for the event. Please come dressed to impress
+        in your best formal wear—think elegant gowns and sharp suits to make the
+        night memorable!".
       </Section>
-      <Section title="Venue">
-        The event will be held at the Oslo East Chapel. The address is 123
-        Chapel Road, Oslo, Norway.
-      </Section>
+      <Section title="Venue">TBD</Section>
       <Section title="Contact">
-        For inquiries, you may contact the event organizers at
+        For inquiries, you may contact Bro. Bong Nunez or Bro. Don Balbin
       </Section>
       <Section title="Children">
-        Children are welcome to attend the event. There will be a separate
-        program for them.
+        "To ensure a memorable evening for all, we kindly request no children
+        attend, allowing couples to fully enjoy the night."
       </Section>
     </div>
   );

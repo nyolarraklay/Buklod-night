@@ -18,7 +18,7 @@ export default function Header({ scrollToSection }) {
         Buklod Night 2024
       </h1>
       <button
-        className={`flex sm:hidden transition-all duration-300 ${
+        className={`flex md:hidden transition-all duration-300 ${
           isOpen ? "hidden" : "block"
         }`}
         onClick={toggleMenu}
@@ -40,7 +40,7 @@ export default function Header({ scrollToSection }) {
       </button>
 
       {isOpen && (
-        <nav className="flex justify-center space-x-6 w-full sm:hidden">
+        <nav className="flex justify-center space-x-6 w-full md:hidden">
           <button
             className="hover:text-indigo-400 transition-colors"
             onClick={() => scrollToSection("home")}
@@ -87,7 +87,7 @@ export default function Header({ scrollToSection }) {
         </nav>
       )}
 
-      <div className="hidden sm:flex transition-all duration-300 opacity-0 sm:opacity-100">
+      <div className="hidden md:flex transition-all duration-300 opacity-0 sm:opacity-100">
         <nav className="flex justify-center space-x-8 w-full">
           <button
             className="hover:text-indigo-400 transition-colors"
