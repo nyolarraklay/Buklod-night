@@ -42,7 +42,7 @@ export default function HomePage() {
           <div ref={section4Ref}>
             <Gallery />
           </div>
-          <div ref={section5Ref}>
+          <div ref={section5Ref} className="bg-gray-100">
             <About />
           </div>
         </div>

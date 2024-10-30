@@ -2,25 +2,25 @@ import React from "react";
 
 export default function FrontPage() {
   return (
-    <div className="h-full lg:h-screen px-8 py-20 flex flex-col lg:flex-row items-center lg:justify-center space-y-10 lg:space-y-0 lg:space-x-10 bg-gray-100">
-      <div className="text-center lg:text-left max-w-lg">
+    <div className="my-5 grid grid-rows-3 justify-items-center items-center md:h-screen mx-auto md:flex md:flex-row md:justify-center md:space-x-10 bg-gray-100 md:mt-5">
+      <div className="text-center lg:text-left max-w-lg space-y-4">
         <span className="text-red-600 font-medium text-lg">
-          It's that time of the year again. Local of Oslo East Welcomes you to
+          It’s that time of the year again. Local of Oslo East welcomes you to
           our annual...
         </span>
         <h1 className="text-5xl font-bold text-gray-800 leading-tight mt-2">
           Buklod Night <span className="text-indigo-600">2024</span>
         </h1>
-        <p className="mt-4 text-gray-600 text-lg">
+        <p className="mt-4 text-gray-700 text-lg">
           Join us for a night of fun, food, and fellowship!
         </p>
         <p className="text-gray-600">Stay tuned for more details.</p>
       </div>
-      <div className="w-full max-w-md lg:w-1/2">
+      <div className="w-full max-w-md lg:w-1/2 row-span-2 row-start-2">
         <img
           src="/20241029_181954.jpg"
-          alt="Buklod Night 2024"
-          className="rounded-lg cursor-pointer h-[580px] w-full object-cover shadow-lg"
+          alt="Invitation to Buklod Night 2024 - A night of celebration and community"
+          className="rounded-lg cursor-pointer w-full object-contain shadow-lg"
         />
       </div>
     </div>
