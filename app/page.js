@@ -39,12 +39,12 @@ export default function HomePage() {
         </div>
         <div ref={section3Ref}>
           <Events />
-          <div ref={section4Ref}>
-            <Gallery />
-          </div>
-          <div ref={section5Ref} className="bg-gray-100">
-            <About />
-          </div>
+        </div>
+        <div ref={section4Ref}>
+          <Gallery />
+        </div>
+        <div ref={section5Ref} className="bg-gray-100">
+          <About />
         </div>
       </div>
     </div>
