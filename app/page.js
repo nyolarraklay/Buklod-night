@@ -15,6 +15,7 @@ export default function HomePage() {
   const section5Ref = useRef(null);
 
   const scrollToSection = (section) => {
+    if (typeof window === "undefined") return;
     const refs = {
       home: section1Ref,
       delegates: section2Ref,
@@ -23,9 +24,8 @@ export default function HomePage() {
       about: section5Ref,
     };
     const sectionTop = refs[section]?.current?.offsetTop || 0;
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
-    }
+
+    window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
   };
 
   return (
