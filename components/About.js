@@ -33,7 +33,7 @@ export default function About() {
         <MapContainer
           center={[59.9319, 10.803]}
           zoom={13}
-          style={{ height: "450px", width: "450px" }}
+          className="w-full h-72  md:h-96 "
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
