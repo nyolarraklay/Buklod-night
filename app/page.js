@@ -31,7 +31,6 @@ export default function HomePage() {
   return (
     <div>
       <Headers scrollToSection={scrollToSection} />
-
       <div className="flex flex-col justify-between">
         <div ref={section1Ref}>
           <FrontPage />

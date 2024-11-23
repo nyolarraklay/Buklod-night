@@ -29,7 +29,7 @@ export default function About() {
       </Section>
       <hr className="border-1 border-black w-56 mx-auto mb-4" />
       <div className="z-10 mb-8">
-        <h1 className="mb-8 text-center"> Location </h1>
+        <h1 className="mb-8 text-center"> Location. </h1>
         <MapContainer
           center={[59.9319, 10.803]}
           zoom={13}
@@ -56,7 +56,7 @@ export default function About() {
         <p> Lørenfaret 3, 0585 Oslo</p>
       </div>
       <Section title="Contact">
-        For inquiries, you may contact Bro. Bong Nunez or Bro. Don Balbin
+        For inquiries, you may contact Bro. Bong Nunez or Bro. Don Balbin.
       </Section>
       <Section title="Children">
         &quot;To ensure a memorable evening for all, we kindly request no
