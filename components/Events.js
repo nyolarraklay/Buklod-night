@@ -15,25 +15,27 @@ const ScheduleList = () => {
 
   return (
     <div className="h-auto p-6 bg-gray-100">
-      <div className="flex flex-col items-center">
-        <h2 className="text-2xl font-bold">Schedule</h2>
-        <p className="text-gray-500">
-          Here's the schedule of activities for the event.
-        </p>
+      <div className="h-screen p-6 bg-gray-100">
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl font-bold">Schedule</h2>
+          <p className="text-gray-500">
+            Here&apos;s the schedule of activities for the event.
+          </p>
+        </div>
+        <h2 className="text-md font-bold mt-10">Friday, December 27, 2024</h2>
+        <ul className={styles.scheduleList}>
+          {scheduleItems.map((item, index) => (
+            <li key={index} className={styles.scheduleItem}>
+              <span className={styles.dot}></span>
+              <span className={styles.time}>{item.time}</span>
+              <span className={styles.task}>{item.task}</span>
+              {index < scheduleItems.length - 1 && (
+                <span className={styles.line}></span>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
-      <h2 className="text-md font-bold mt-10">Friday, December 27, 2024</h2>
-      <ul className={styles.scheduleList}>
-        {scheduleItems.map((item, index) => (
-          <li key={index} className={styles.scheduleItem}>
-            <span className={styles.dot}></span>
-            <span className={styles.time}>{item.time}</span>
-            <span className={styles.task}>{item.task}</span>
-            {index < scheduleItems.length - 1 && (
-              <span className={styles.line}></span>
-            )}
-          </li>
-        ))}
-      </ul>
       <div className="mx-auto space-y-5  max-w-lg px-8 py-10  flex flex-col justify-evenly">
         <div>
           <h1 className="mb-8 text-center"> Meny </h1>
