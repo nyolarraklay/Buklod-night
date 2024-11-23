@@ -23,7 +23,9 @@ export default function HomePage() {
       about: section5Ref,
     };
     const sectionTop = refs[section]?.current?.offsetTop || 0;
-    window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
+    }
   };
 
   return (
