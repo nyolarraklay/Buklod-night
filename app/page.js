@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Headers from "../components/Header";
 import FrontPage from "@/components/FrontPage";
 import Delegates from "@/components/Delegates";
@@ -14,16 +14,8 @@ export default function HomePage() {
   const section4Ref = useRef(null);
   const section5Ref = useRef(null);
 
-  // Ensure scrollToSection is only available client-side
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Set to true after mounting on the client
-  }, []);
-
   const scrollToSection = (section) => {
-    if (!isClient) return; // Ensure window is available (only runs in the browser)
-
+    // Ensure code runs only on the client
     const refs = {
       home: section1Ref,
       delegates: section2Ref,
@@ -32,15 +24,11 @@ export default function HomePage() {
       about: section5Ref,
     };
     const sectionTop = refs[section]?.current?.offsetTop || 0;
-    window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
   };
-
-  if (!isClient) {
-    return null; // Render nothing or a loading spinner until the component is mounted in the browser
-  }
 
   return (
     <div>
+      {/* Pass scrollToSection as a prop to Headers */}
       <Headers scrollToSection={scrollToSection} />
       <div className="flex flex-col justify-between">
         <div ref={section1Ref}>
