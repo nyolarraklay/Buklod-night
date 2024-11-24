@@ -15,7 +15,6 @@ export default function HomePage() {
   const section5Ref = useRef(null);
 
   const scrollToSection = (section) => {
-    // Ensure code runs only on the client
     const refs = {
       home: section1Ref,
       delegates: section2Ref,
@@ -24,12 +23,13 @@ export default function HomePage() {
       about: section5Ref,
     };
     const sectionTop = refs[section]?.current?.offsetTop || 0;
+    window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
   };
 
   return (
     <div>
-      {/* Pass scrollToSection as a prop to Headers */}
       <Headers scrollToSection={scrollToSection} />
+
       <div className="flex flex-col justify-between">
         <div ref={section1Ref}>
           <FrontPage />
@@ -39,12 +39,12 @@ export default function HomePage() {
         </div>
         <div ref={section3Ref}>
           <Events />
-        </div>
-        <div ref={section4Ref}>
-          <Gallery />
-        </div>
-        <div ref={section5Ref} className="bg-gray-100">
-          <About />
+          <div ref={section4Ref}>
+            <Gallery />
+          </div>
+          <div ref={section5Ref} className="bg-gray-100">
+            <About />
+          </div>
         </div>
       </div>
     </div>
