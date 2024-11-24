@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 
-export default function Header({ scrollToSection }) {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +14,6 @@ export default function Header({ scrollToSection }) {
         className={`transition-all duration-300 font-bold text-xl cursor-pointer ${
           isOpen ? "hidden" : "block"
         }`}
-        onClick={() => scrollToSection("home")}
       >
         Buklod Night 2024
       </h1>
@@ -39,38 +39,53 @@ export default function Header({ scrollToSection }) {
         </svg>
       </button>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <nav className="flex justify-center space-x-6 w-full md:hidden">
-          <button
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("home")}
           >
             Home
-          </button>
-          <button
+          </Link>
+          <Link
+            to="delegates"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("delegates")}
           >
             Delegates
-          </button>
-          <button
+          </Link>
+          <Link
+            to="events"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("events")}
           >
             Events
-          </button>
-          <button
+          </Link>
+          <Link
+            to="gallery"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("gallery")}
           >
             Gallery
-          </button>
-          <button
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("about")}
           >
             About
-          </button>
+          </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -87,38 +102,54 @@ export default function Header({ scrollToSection }) {
         </nav>
       )}
 
+      {/* Desktop Menu */}
       <div className="hidden md:flex transition-all duration-300 opacity-0 sm:opacity-100">
         <nav className="flex justify-center space-x-8 w-full">
-          <button
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("home")}
           >
             Home
-          </button>
-          <button
+          </Link>
+          <Link
+            to="delegates"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("delegates")}
           >
             Delegates
-          </button>
-          <button
+          </Link>
+          <Link
+            to="events"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("events")}
           >
             Events
-          </button>
-          <button
+          </Link>
+          <Link
+            to="gallery"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("gallery")}
           >
             Gallery
-          </button>
-          <button
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-50}
             className="hover:text-indigo-400 transition-colors"
-            onClick={() => scrollToSection("about")}
           >
             About
-          </button>
+          </Link>
         </nav>
       </div>
     </div>

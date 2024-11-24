@@ -1,11 +1,11 @@
-// "use client";
-// import { useRef, useState, useEffect } from "react";
-// import Headers from "../components/Header";
-// import FrontPage from "@/components/FrontPage";
-// import Delegates from "@/components/Delegates";
-// import Events from "@/components/Events";
-// import Gallery from "@/components/Gallery";
-// import About from "@/components/About";
+"use client";
+import { useRef, useState, useEffect } from "react";
+import Headers from "../components/Header";
+import FrontPage from "@/components/FrontPage";
+import Delegates from "@/components/Delegates";
+import Events from "@/components/Events";
+import Gallery from "@/components/Gallery";
+import About from "@/components/About";
 
 // export default function HomePage() {
 //   const section1Ref = useRef(null);
@@ -59,8 +59,27 @@
 //   );
 // }
 
-import React from "react";
+import { Element } from "react-scroll";
 
-export default function hello() {
-  return <div>hello</div>;
+export default function HomePage() {
+  return (
+    <div>
+      <Headers />
+      <Element name="home">
+        <FrontPage />
+      </Element>
+      <Element name="delegates">
+        <Delegates />
+      </Element>
+      <Element name="events">
+        <Events />
+      </Element>
+      <Element name="gallery">
+        <Gallery />
+      </Element>
+      <Element name="about">
+        <About />
+      </Element>
+    </div>
+  );
 }
