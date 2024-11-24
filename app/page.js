@@ -16,17 +16,14 @@ export default function HomePage() {
 
   const scrollToSection = (section) => {
     // Ensure code runs only on the client
-    if (typeof window !== "undefined") {
-      const refs = {
-        home: section1Ref,
-        delegates: section2Ref,
-        events: section3Ref,
-        gallery: section4Ref,
-        about: section5Ref,
-      };
-      const sectionTop = refs[section]?.current?.offsetTop || 0;
-      window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
-    }
+    const refs = {
+      home: section1Ref,
+      delegates: section2Ref,
+      events: section3Ref,
+      gallery: section4Ref,
+      about: section5Ref,
+    };
+    const sectionTop = refs[section]?.current?.offsetTop || 0;
   };
 
   return (
