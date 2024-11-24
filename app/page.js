@@ -11,17 +11,16 @@ export default function HomePage() {
   return (
     <>
       <Headers />
-      <SmoothScroll>
-        <FrontPage />
 
-        <Delegates />
+      <FrontPage />
 
-        <Events />
+      <Delegates />
 
-        <Gallery />
+      <Events />
 
-        <About />
-      </SmoothScroll>
+      <Gallery />
+
+      <About />
     </>
   );
 }
