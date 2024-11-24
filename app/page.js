@@ -1,4 +1,3 @@
-"use client";
 import Headers from "../components/Header";
 import FrontPage from "@/components/FrontPage";
 import Delegates from "@/components/Delegates";
