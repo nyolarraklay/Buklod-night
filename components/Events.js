@@ -17,7 +17,7 @@ const ScheduleList = () => {
     <div className="h-auto p-6 bg-gray-100">
       <div className="h-screen p-6 bg-gray-100">
         <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-bold">Schedule</h2>
+          <h2 className="text-2xl font-bold">Schedule and Menu</h2>
           <p className="text-gray-500">
             Here&apos;s the schedule of activities for the event.
           </p>
