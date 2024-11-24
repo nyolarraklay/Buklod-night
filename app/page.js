@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Headers from "../components/Header";
 import FrontPage from "@/components/FrontPage";
 import Delegates from "@/components/Delegates";
@@ -14,16 +14,24 @@ export default function HomePage() {
   const section4Ref = useRef(null);
   const section5Ref = useRef(null);
 
+  const [targetSection, setTargetSection] = useState(null);
+
+  useEffect(() => {
+    if (targetSection) {
+      const refs = {
+        home: section1Ref,
+        delegates: section2Ref,
+        events: section3Ref,
+        gallery: section4Ref,
+        about: section5Ref,
+      };
+      const sectionTop = refs[targetSection]?.current?.offsetTop || 0;
+      window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
+    }
+  }, [targetSection]);
+
   const scrollToSection = (section) => {
-    const refs = {
-      home: section1Ref,
-      delegates: section2Ref,
-      events: section3Ref,
-      gallery: section4Ref,
-      about: section5Ref,
-    };
-    const sectionTop = refs[section]?.current?.offsetTop || 0;
-    window.scrollTo({ top: sectionTop - 50, behavior: "smooth" });
+    setTargetSection(section);
   };
 
   return (
