@@ -27,5 +27,3 @@ button {
   font-family: "Montserrat", sans-serif; /* Keep button text consistent */
   font-weight: 600; /* Medium weight for buttons */
 }
-
-@import url("https://unpkg.com/leaflet@1.7.1/dist/leaflet.css");
