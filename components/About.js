@@ -1,7 +1,4 @@
 import React from "react";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 
 const Section = ({ title, children }) => (
   <div className="mb-8 text-center">
@@ -30,28 +27,7 @@ export default function About() {
       <hr className="border-1 border-black w-56 mx-auto mb-4" />
       <div className="z-10 mb-8">
         <h1 className="mb-8 text-center"> Location. </h1>
-        <MapContainer
-          center={[59.9319, 10.803]}
-          zoom={13}
-          className="w-full h-72  md:h-96 "
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          {markers.map((marker, idx) => (
-            <Marker
-              key={idx}
-              position={marker.position}
-              icon={L.icon({
-                iconUrl:
-                  "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
-              })}
-            >
-              <Popup>{marker.text}</Popup>
-            </Marker>
-          ))}
-        </MapContainer>
+
         <h2>Radisson RED ØKERN </h2>
         <p> Lørenfaret 3, 0585 Oslo</p>
       </div>
