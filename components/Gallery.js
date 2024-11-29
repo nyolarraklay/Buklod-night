@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 
 export default function Gallery() {
   return (
@@ -9,35 +10,41 @@ export default function Gallery() {
         <p>Images from Buklod Night 2023</p>
       </div>
       <div className="p-6 grid justify-center lg:grid-cols-2 gap-5">
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/414728346_10160695135362798_6244251439185725176_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XbIpJa57FKwQ7kNvgGAj7bf&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AC_PfWb9m2j9ijL3jpHfl9O&oh=00_AYA29cu4wTVxxQUMuo5nGoHhtxsynO0b9mKdLeiVtTlhRg&oe=6721A0A2"
+        <Image
+          src="/Gallery/bn-1.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer w-full h-80 lg:h-96 object-cover"
+          width={500}
+          height={300}
         />
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/414976025_10160695135117798_3150070818068633409_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=18SIingEF7oQ7kNvgFc4Dka&_nc_ht=scontent.fosl1-1.fna&_nc_gid=A5OsfQLarOYLG0iWD4UM4EW&oh=00_AYA5Pw7BPX165qmWOL1bsb-ato3MmYgCk_0MUB-T_TFwYw&oe=6721A699"
+        <Image
+          src="/Gallery/bn-2.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer h-80 w-full object-cover lg:h-96"
+          width={500}
+          height={300}
         />
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415777633_10223641030566218_8374971365515718859_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JpGZUJPJryAQ7kNvgHpDG_T&_nc_zt=23&_nc_ht=scontent.fosl1-1.fna&_nc_gid=ARqs1IEQ4pHAAI5fyc9HLUa&oh=00_AYC74pKEuHNWFNUL1VWwYI0_nmFFoAhs3jzsswh-R5SuNg&oe=6727F97A"
+        <Image
+          src="/Gallery/bn-3.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer h-80 w-full object-cover lg:h-96"
+          width={500}
+          height={300}
         />
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415766663_10223641033326287_5056037535074464077_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uHVQ5gSf9dIQ7kNvgEvIeIU&_nc_zt=23&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AaeDFXLQRYYrJcwkAU-V9To&oh=00_AYDI94yUDUP7QKWCE1U0r4JAm7BKHGYtItjS6ZDGh06pAg&oe=6727E0EB"
+        <Image
+          src="/Gallery/bn-4.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer h-80 w-full object-cover lg:h-96"
+          width={500}
+          height={300}
         />
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415991162_7220267561327426_845516322285402657_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FdlkcIe6xyAQ7kNvgGTd8Vy&_nc_zt=23&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AIEFKFiWNOCF_klrLJL4kvv&oh=00_AYDmc8WV9FTbSWnBXEA6PpGXT9IiOP6lQqL0NEVTOvWhsQ&oe=6727D3F6"
+        <Image
+          src="/Gallery/bn-5.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer h-80 w-full object-cover lg:h-96"
+          width={500}
+          height={300}
         />
-        <img
-          src="https://scontent.fosl1-1.fna.fbcdn.net/v/t39.30808-6/415000347_10160695135507798_2249378185604688562_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LvLQL-gEwqsQ7kNvgHDvbUb&_nc_ht=scontent.fosl1-1.fna&_nc_gid=AU9tUEKMNCmSo32GOgzJ8J2&oh=00_AYDiOvvRfxhHaK9z91GnGiOgK6QwhdfZo1VoZj485X31XQ&oe=6721D26F"
+        <Image
+          src="/Gallery/bn-6.jpg"
           alt="Delegates"
-          className="rounded-lg cursor-pointer h-80 w-full object-cover lg:h-96"
+          width={500}
+          height={300}
         />
       </div>
     </div>
