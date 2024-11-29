@@ -1,4 +1,5 @@
 import React from "react";
+import GoogleMapsWrapper from "./GoogleMapsWrapper";
 
 const Section = ({ title, children }) => (
   <div className="mb-8 text-center">
@@ -10,13 +11,6 @@ const Section = ({ title, children }) => (
 );
 
 export default function About() {
-  const markers = [
-    {
-      position: [59.930669188991544, 10.799199079763515],
-      text: "Radisson RED Oslo Økern",
-    },
-  ];
-
   return (
     <div className=" mx-auto  max-w-lg px-8 py-10  flex flex-col justify-evenly">
       <Section title="Attire">
@@ -27,6 +21,7 @@ export default function About() {
       <hr className="border-1 border-black w-56 mx-auto mb-4" />
       <div className="z-10 mb-8">
         <h1 className="mb-8 text-center"> Location. </h1>
+        <GoogleMapsWrapper />
 
         <h2>Radisson RED ØKERN </h2>
         <p> Lørenfaret 3, 0585 Oslo</p>
